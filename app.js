@@ -12,14 +12,14 @@
 var url = require('url');
 var querystring = require('querystring');
 var express = require('express');
-var unblocker = require('unblocker');
-var Transform = require('stream').Transform;
+//var unblocker = require('unblocker');
+//var Transform = require('stream').Transform;
 
 var app = express();
 
-var google_analytics_id = process.env.GA_ID || null;
+//var google_analytics_id = process.env.GA_ID || null;
 
-function addGa(html) {
+/*function addGa(html) {
     if (google_analytics_id) {
         var ga = [
             "<script type=\"text/javascript\">",
@@ -38,6 +38,7 @@ function addGa(html) {
     return html;
 }
 
+
 function googleAnalyticsMiddleware(data) {
     if (data.contentType == 'text/html') {
 
@@ -51,7 +52,7 @@ function googleAnalyticsMiddleware(data) {
         }));
     }
 }
-
+*/
 /*
 var unblockerConfig = {
     prefix: '/proxy/',
