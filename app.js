@@ -52,6 +52,7 @@ function googleAnalyticsMiddleware(data) {
     }
 }
 
+/*
 var unblockerConfig = {
     prefix: '/proxy/',
     responseMiddleware: [
@@ -74,6 +75,6 @@ app.get("/no-js", function(req, res) {
     // and redirect the user to /proxy/url
     res.redirect(unblockerConfig.prefix + site);
 });
-
+*/
 // for compatibility with gatlin and other servers, export the app rather than passing it directly to http.createServer
 module.exports = app;
